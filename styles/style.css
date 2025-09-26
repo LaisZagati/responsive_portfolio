@@ -146,3 +146,14 @@ footer {
   font-family: "Departure Mono", monospace;
   font-weight: bold;
 }
+
+.work-page h2 {
+  font-family: var(--default-font-family);
+  font-size:18px;
+}
+
+
+.work-page p {
+  font-family: var(--default-font-family);
+  font-size: 15px;
+}
