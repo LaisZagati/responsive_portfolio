@@ -57,7 +57,8 @@ p {
   font-weight: bold;
 }
 
-/* Content below header styling */
+/* Content below header styling: */
+
 h2 {
   font-size: 33px;
 }
@@ -83,7 +84,7 @@ p {
 }
 
 footer {
-  border-bottom: 1px solid #f9f7fe; /* Line below footer with clear color */
+  border-bottom: 1px solid #f9f7fe; 
   padding: 30px 0 0 0;
   text-align: center;
   font-weight: 500;
@@ -91,6 +92,7 @@ footer {
   color: rgba(0, 0, 0, 0.6);
 }
 
+/* Media Queries for responsiveness: */ 
 @media (max-width: 765px) {
   .hero {
     padding: 20px;
@@ -111,4 +113,36 @@ footer {
   p {
     font-size: 16px;
   }
+
+  .btn-about {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .about-section p {    
+    font-size: 15px;
+
+  }
+}
+
+/* About section style: */
+
+.about-section h1 {
+  font-family: var(--default-font-family);
+}
+.about-section p {
+  font-family: var(--default-font-family);
+}
+.about-section {
+  background-color: var(--secondary-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+.btn-about {
+  background-color: var(--branding-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Departure Mono", monospace;
+  font-weight: bold;
 }
