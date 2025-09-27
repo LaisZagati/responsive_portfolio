@@ -92,8 +92,20 @@ p {
   font-weight: bold;
 }
 
-/* Content below header styling: */
+img {
+  background: linear-gradient(135deg, #f9f9fb, #eef2f7);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
 
+/* Content below header styling: */
 h2 {
   font-size: 33px;
 }
@@ -160,7 +172,7 @@ footer {
   nav {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
   .logo {
     display: block;
@@ -171,31 +183,51 @@ footer {
     margin-top: 10px;
   }
 }
-  
 
 /* About section style: */
 
-.about-section h1 {
-  font-family: var(--default-font-family);
-}
-.about-section p {
-  font-family: var(--default-font-family);
-}
 .about-section {
-  background-color: var(--secondary-color);
-  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9f9fb, #eef2f7);
+  border-radius: 20px;
+  padding: 40px 30px;
   text-align: center;
-}
-.btn-about {
-  background-color: var(--branding-color);
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: "Departure Mono", monospace;
-  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.about-section h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d2d3a;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-branding {
+  background: var(--branding-color, #6c63ff);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-branding:hover {
+  background: #574bdb;
+  transform: scale(1.05);
+}
+
+/* Work Page Styling: */
 .work-page h2 {
   font-family: var(--default-font-family);
   font-size: 18px;
@@ -206,9 +238,14 @@ footer {
   font-size: 15px;
 }
 
+/* Footer styling: */
 .btn-footer {
   font-family: var(--default-font-family);
   font-size: 14px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
+}
+
+footer .social-links a {
+  color: var(--branding-color);
 }
